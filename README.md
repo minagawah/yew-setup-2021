@@ -51,6 +51,8 @@ yarn build
 
 ## 3. What I Did
 
+### 3-1. Webpack 5 Specific
+
 Not much to mention, but you need to be careful with Webpack 5.  
 You get the following error when compile:
 
@@ -88,6 +90,19 @@ There, you need to set the following Webpack option:
   experiments: {
     syncWebAssembly: true,
   }
+```
+
+### 3-2. Serving from Subdirectory
+
+Also, I added `output.publicPath` because I am serving
+the content from subdirectory in `production`.
+
+`webpack.prod.js`
+
+```js
+  output: {
+    publicPath: '/mina/yew-setup-2021/',
+  },
 ```
 
 &nbsp;

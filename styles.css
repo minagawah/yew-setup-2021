@@ -70,3 +70,8 @@ a:active {
   overflow-wrap: anywhere;
   font-size: 1.6rem;
 }
+
+#footer {
+  margin-top: 1rem;
+}
+

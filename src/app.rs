@@ -76,6 +76,12 @@ impl Component for App {
                 <div id="description">
                     { &self.state.entry.description }
                 </div>
+
+                <div id="footer">
+                    <a href="https://github.com/minagawah/yew-setup-2021">
+                        { "View Source" }
+                    </a>
+                </div>
             </Container>
         }
     }
