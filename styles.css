@@ -1,0 +1,72 @@
+body {
+  background-color: #f2f2f2;
+  color: #1c1c1c;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:visited {
+  text-decoration: underline;
+  color: #de0000;
+}
+
+a:hover,
+a:active {
+  color: #a22;
+}
+
+#container {
+  width: 100%;
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#control {
+  background-color: #e8e8e8;
+  padding: 1em 2em;
+  font-size: 1.6rem;
+}
+
+.entry {
+  padding: 0.2em 0.6em;
+  font-size: 1.6rem;
+  color: #555;
+}
+
+.entry-in-progress {
+  color: #1c1c1c;
+}
+
+.btn {
+  margin-left: 0.4em;
+  padding: 0.2em 0.4em;
+  border: 0;
+  font-size: 1.6rem;
+}
+
+.btn-update {
+  background-color: #13dfff;
+}
+
+.btn-remove {
+  background-color: #ff1360;
+}
+
+#description {
+  margin-top: 0.6rem;
+  width: 50%;
+  min-width: 340px;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: 1.6rem;
+}

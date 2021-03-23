@@ -1,0 +1,57 @@
+{
+  "name": "yew-setup-2021",
+  "version": "0.1.0",
+  "private": false,
+  "description": "My simple 'yew' app template for 2021.",
+  "main": "bootstrap.js",
+  "scripts": {
+    "test": "wasm-pack test --chrome --firefox --safari --headless",
+    "prettier": "prettier --write \"**/*\"",
+    "pretty": "pretty-quick",
+    "clippy": "cd src && cargo clippy",
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "serve": "http-server dist -a localhost -p 8080"
+  },
+  "repository": "https://github.com/minagawah/yew-setup-2021.git",
+  "homepage": "",
+  "keywords": [
+    "yew",
+    "wasm-pack",
+    "wasm-pack-plugin"
+  ],
+  "author": "Hiroki Minagawa <minagawa@tokyo800.jp>",
+  "license": "(Unlicense OR MIT OR Apache)",
+  "bugs": {
+    "url": "https://github.com/minagawah/yew-setup-2021/issues"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "^1.3.3",
+    "autoprefixer": "^10.2.5",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^8.0.0",
+    "css-loader": "^5.1.3",
+    "license-webpack-plugin": "^2.3.15",
+    "postcss-loader": "^5.2.0",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "style-loader": "^2.0.0",
+    "wasm-pack": "^0.9.1",
+    "webpack": "^5.27.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}

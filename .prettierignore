@@ -1,0 +1,17 @@
+/dist
+/node_modules
+/src
+/pkg
+/static/assets
+/target
+/tests
+.gitignore
+.prettierignore
+Cargo.toml
+Cargo.lock
+LICENSE*
+package.json
+yarn-error.log
+yarn.lock
+package-lock.json
+
