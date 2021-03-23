@@ -19,6 +19,7 @@ Codes are basically taken from
 only, I made it simpler.
 
 Some differences:
+
 - No `entries` but a single `entry`
 - No filtering list items
 - Breaking into several components
@@ -138,7 +139,3 @@ Choose at your option.
 
 - The UNLICENSE ([LICENSE.UNLICENSE](LICENSE.UNLICENSE))
 - MIT license ([LICENSE.MIT](LICENSE.MIT))
-
-dev": "webpack-dev-server --mode development --open",
-build": "webpack --mode production",
-build:dev": "webpack --mode development",
