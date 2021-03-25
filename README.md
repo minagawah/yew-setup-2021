@@ -29,6 +29,7 @@ Some differences:
 - Breaking into several components
 - Separate files
 - Calling parent callback from a child
+- Bound to `#app`
 - Webpack 5 latest configurations
 
 &nbsp;
