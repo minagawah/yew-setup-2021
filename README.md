@@ -4,7 +4,7 @@ My simple 'yew' app template for 2021.
 
 ![screenshot](screenshot.png)
 
-[View Demo](http://tokyo800.jp/mina/yew-setup-2021/)  
+[View Demo](http://tokyo800.jp/mina/yew-setup-2021/)
 
 [1. About](#1-about)  
 [2. Dev + Build](#2-dev--build)  

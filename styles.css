@@ -23,7 +23,6 @@ a:active {
 
 #container {
   width: 100%;
-  margin-top: 0.6rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -31,26 +30,82 @@ a:active {
 }
 
 #control {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   background-color: #e8e8e8;
-  padding: 1em 2em;
   font-size: 1.6rem;
 }
 
+@media (max-width: 768px) {
+  #control {
+    width: 85%;
+    margin-top: 0.6rem;
+    padding: 1.4rem 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  #control {
+    margin-top: 1.2rem;
+    padding: 1rem 2rem;
+  }
+}
+
 .entry {
-  padding: 0.2em 0.6em;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.6rem 0.4rem;
   font-size: 1.6rem;
   color: #555;
+}
+
+@media (min-width: 769px) {
+  .entry {
+    max-width: 490px;
+    padding: 0.2rem 0.6rem;
+  }
 }
 
 .entry-in-progress {
   color: #1c1c1c;
 }
 
+#buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  #buttons {
+    margin-top: 0.6rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
 .btn {
-  margin-left: 0.4em;
-  padding: 0.2em 0.4em;
   border: 0;
   font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    margin-top: 0.6rem;
+    padding: 0.6rem 0.6rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .btn {
+    margin-left: 0.4rem;
+    padding: 0.2rem 0.4rem;
+  }
 }
 
 .btn-update {
@@ -63,15 +118,25 @@ a:active {
 
 #description {
   margin-top: 0.6rem;
-  width: 50%;
-  min-width: 340px;
   text-align: center;
   white-space: normal;
   overflow-wrap: anywhere;
   font-size: 1.6rem;
 }
 
+@media (max-width: 768px) {
+  #description {
+    width: 85%;
+  }
+}
+
+@media (min-width: 769px) {
+  #description {
+    width: 50%;
+    min-width: 340px;
+  }
+}
+
 #footer {
   margin-top: 1rem;
 }
-

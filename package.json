@@ -1,6 +1,6 @@
 {
   "name": "yew-setup-2021",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": false,
   "description": "My simple 'yew' app template for 2021.",
   "main": "bootstrap.js",

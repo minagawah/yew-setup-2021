@@ -82,13 +82,15 @@ impl Component for Control {
                     onkeypress=pressing
                 />
 
-                <button class="btn btn-update" onclick=editing>
-                    { "Update" }
-                </button>
+                <div id="buttons">
+                    <button class="btn btn-update" onclick=editing>
+                        { "Update" }
+                    </button>
 
-                <button class="btn btn-remove" onclick=removing>
-                    { "Remove" }
-                </button>
+                    <button class="btn btn-remove" onclick=removing>
+                        { "Remove" }
+                    </button>
+                </div>
             </div>
         }
     }
