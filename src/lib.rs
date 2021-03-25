@@ -23,6 +23,6 @@ pub fn run_app() -> Result<(), JsValue> {
         App::<app::App>::new().mount(elem);
         Ok(())
     } else {
-        Err(JsValue::from("No element to wrap"))
+        Err(JsValue::from("No element to bind"))
     }
 }
