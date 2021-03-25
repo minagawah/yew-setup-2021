@@ -22,6 +22,7 @@ impl Component for App {
 
     fn create(_: Self::Properties, link: ComponentLink<Self>) -> Self {
         let storage = StorageService::new(Area::Local).unwrap();
+
         let entry = {
             if let Json(Ok(restored_entry)) = storage.restore(KEY) {
                 restored_entry
@@ -29,7 +30,9 @@ impl Component for App {
                 Entry::new("")
             }
         };
+
         let state = State { entry };
+
         App {
             link,
             storage,
@@ -62,6 +65,7 @@ impl Component for App {
     }
 
     fn view(&self) -> Html {
+        // Event handlers passed down to Control component.
         let on_edit_handler = self.link.callback(Msg::Edit);
         let on_remove_handler = self.link.callback(|_| Msg::Remove);
 

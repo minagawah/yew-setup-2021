@@ -7,15 +7,15 @@ use crate::message::Msg;
 #[derive(Properties, Clone)]
 pub struct Props {
     pub entry: Entry,
-    pub on_edit: Callback<String>,
-    pub on_remove: Callback<()>,
+    pub on_edit: Callback<String>, // Callback from the parent.
+    pub on_remove: Callback<()>,   // Callback from the parent.
 }
 
 pub struct Control {
-    memo_input_ref: NodeRef,
+    memo_input_ref: NodeRef, // Reference for the input form (to later select for focus).
     link: ComponentLink<Self>,
     props: Props,
-    value: String,
+    value: String, // Temporary saves the entered value.
 }
 
 impl Component for Control {
@@ -42,10 +42,12 @@ impl Component for Control {
                 self.value = val;
             }
             Msg::EmitEdit => {
+                // Calling the parent's callback.
                 self.props.on_edit.emit(self.value.clone());
                 self.focus();
             }
             Msg::EmitRemove => {
+                // Calling the parent's callback.
                 self.props.on_remove.emit(());
                 self.value = "".into();
                 self.focus();
@@ -68,6 +70,8 @@ impl Component for Control {
         let removing = self.link.callback(|_| Msg::EmitRemove);
 
         let mut entry_style = "entry".to_string();
+
+        // A bit darker color when editing.
         if self.props.entry.editing {
             entry_style.push_str(" entry-in-progress");
         }
@@ -103,7 +107,8 @@ impl Component for Control {
 }
 
 impl Control {
-    fn focus(&mut self) {
+    // fn focus(&mut self) {
+    fn focus(&self) {
         if let Some(input) = self.memo_input_ref.cast::<InputElement>() {
             input.focus().expect("Failed to focus");
         }
