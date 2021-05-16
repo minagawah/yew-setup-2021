@@ -15,7 +15,7 @@ pub struct Control {
     memo_input_ref: NodeRef, // Reference for the input form (to later select for focus).
     link: ComponentLink<Self>,
     props: Props,
-    value: String, // Temporary saves the entered value.
+    value: String, // Temporarily saves the entered value.
 }
 
 impl Component for Control {
