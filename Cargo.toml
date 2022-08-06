@@ -1,7 +1,7 @@
 [package]
 name = "yew_setup_2021"
 version = "0.1.5"
-authors = ["Hiroki Minagawa <minagawa@tokyo800.jp>"]
+authors = ["minagawah <minag@tokyo800.jp>"]
 edition = "2018"
 
 [lib]
