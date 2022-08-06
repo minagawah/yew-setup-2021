@@ -20,7 +20,7 @@
     "wasm-pack",
     "wasm-pack-plugin"
   ],
-  "author": "Hiroki Minagawa <minagawa@tokyo800.jp>",
+  "author": "minagawah <minag@tokyo800.jp>",
   "license": "(Unlicense OR MIT OR Apache)",
   "bugs": {
     "url": "https://github.com/minagawah/yew-setup-2021/issues"
